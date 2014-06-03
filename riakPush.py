@@ -5,8 +5,8 @@ import json
 from riak import RiakClient, RiakNode
 
 parser = argparse.ArgumentParser(description='Takes a list of urls and ')
-parser.add_argument('--srcRiak', dest='srcRiak', default='10.228.39.181', help='The host we get the redis data from')
-parser.add_argument('--destRiak', dest='destRiak', default='int-riak-01.magic-technik.de', help='The host we get the redis data from')
+parser.add_argument('--srcRiak', dest='srcRiak', default='10.228.39.181', help='The host we get the riak data from')
+parser.add_argument('--destRiak', dest='destRiak', default='int-riak-01.magic-technik.de', help='The host we push the riak data')
 args = parser.parse_args()
 
 # map arguments
